@@ -41,8 +41,8 @@ node* leftRotate(node* r){
     x->left = r;
     r->right = T;
 
-    x->height = 1 + max(height(x->left),height(x->right));
     r->height = 1 + max(height(r->left),height(r->right));
+    x->height = 1 + max(height(x->left),height(x->right));
 
     return x;
 }
