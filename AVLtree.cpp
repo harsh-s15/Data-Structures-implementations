@@ -100,7 +100,7 @@ int main(){
 
     node* root = new node(17);
     for(int y : {72,12,23,54,76,9,14,19,24,67}){
-        insert(root,y);
+        root = insert(root,y);
         inorder(root); cout << '\n';
     }
 
